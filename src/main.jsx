@@ -4,12 +4,12 @@ import { ThirdwebProvider } from "@thirdweb-dev/react";
 import { Sepolia } from "@thirdweb-dev/chains";
 import App from "./App";
 import './index.css';
-import {Test} from './pages'
+import {Test, LoginPage} from './pages'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App/>}>
-      <Route path="" element={<Test/>} />
+      <Route path="" element={<LoginPage/>} />
     </Route>
   )
 )
